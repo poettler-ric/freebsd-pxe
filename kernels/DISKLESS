@@ -1,0 +1,11 @@
+include 	GENERIC
+ident 		DISKLESS
+
+options 	NFSCL		#experimental NFS client with NFSv4
+options 	NFS_ROOT	#NFS usable as root device
+
+options 	BOOTP		# Use BOOTP to obtain IP address/hostname
+options 	BOOTP_NFSROOT	# NFS mount root filesystem using BOOTP info
+options 	BOOTP_COMPAT	# Workaround for broken bootp daemons.
+
+device		md		#Memory/malloc disk
